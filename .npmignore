@@ -1,0 +1,11 @@
+/test
+/examples
+/css
+/js
+/.vscode
+/.history
+.github
+.gulpfile
+.sass-cache
+gulpfile.js
+CONTRIBUTING.md

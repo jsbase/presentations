@@ -22,8 +22,12 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
 		<style>
-			.reveal .slide-background.present.firstSlide {
+			.reveal .slide-background.present.-opacity {
 				opacity: 0.05;
+			}
+
+			h2 span {
+				display: inline-block;
 			}
 		</style>
 	</head>
@@ -34,21 +38,34 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section class="firstSlide" data-background-transition="convex"
-						data-background="/examples/assets/quality/teaser1.jpg"
-						data-background-size="100%"
-						data-background-repeat="no-repeat">
 
-					<section data-background-transition="zoom">
+				<section class="-opacity"
+				data-background-transition="convex"
+				data-background="/examples/assets/quality/teaser1.jpg"
+				data-background-size="100%"
+				data-background-repeat="no-repeat">
 
+					<section data-auto-animate="true" data-auto-animate-easing="ease-out">
+						<h2>
+							<span data-id="skunk" style="opacity:1;height:auto;">🦨</span> code smells<span data-id="text" style="opacity:0;height:0;"> like mean spirit</span>
+						</h2>
 					</section>
 
-					<section data-background-transition="zoom">
-						<h1>🦨 code smells</h1>
-						<p>-</p>
-						<h2>lego naming</h2>
+					<section data-auto-animate="true" data-auto-animate-easing="ease-out">
+						<h2>
+							<span data-id="skunk" style="opacity:0;height:0;">🦨</span> code smells<span data-id="text" style="opacity:1;height:auto;"> like mean spirit</span>
+						</h2>
 					</section>
+
 				</section>
+
+				<!--
+				<section data-background-transition="convex">
+					<div>
+						<img src="/examples/assets/quality/teaser2.jpg" alt="teaser2">
+					</div>
+				</section>
+				-->
 
 				<section data-background-transition="convex">
 					<section data-background-transition="zoom"
@@ -117,12 +134,6 @@
 							<li>3) brevity (short names)</li>
 						</ul>
 					</section>
-				</section>
-
-				<section data-background="/examples/assets/quality/teaser2.jpg"
-						data-background-size="70%"
-						data-background-repeat="no-repeat"
-						data-background-transition="zoom">
 				</section>
 
 			</div>

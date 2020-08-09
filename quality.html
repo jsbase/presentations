@@ -20,6 +20,12 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<style>
+			.reveal .slide-background.present.firstSlide {
+				opacity: 0.05;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -28,30 +34,51 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section class="firstSlide" data-background-transition="convex"
+						data-background="/examples/assets/quality/teaser1.jpg"
+						data-background-size="100%"
+						data-background-repeat="no-repeat">
+
+					<section data-background-transition="zoom">
+
+					</section>
+
+					<section data-background-transition="zoom">
+						<h1>🦨 code smells</h1>
+						<p>-</p>
+						<h2>lego naming</h2>
+					</section>
+				</section>
+
+				<section data-background-transition="convex">
+					<section data-background-transition="zoom"
+							data-background="/examples/assets/quality/noise1.jpg"
+							data-background-size="50%"
+							data-background-repeat="no-repeat">
+					</section>
+
+					<section data-background-transition="zoom">
+						<img src="/examples/assets/quality/noise2.jpg" width="50%" alt="noise">
+					</section>
+				</section>
 
 				<section data-background-transition="convex">
 					<section data-background="/examples/assets/quality/agglutination1.jpg"
 							data-background-size="70%"
 							data-background-repeat="no-repeat"
-							data-background-color="#20272F"
 							data-background-transition="zoom">
-
 					</section>
 
 					<section data-background="/examples/assets/quality/agglutination2.jpg"
 							data-background-size="70%"
 							data-background-repeat="no-repeat"
-							data-background-color="#20272F"
 							data-background-transition="zoom">
-
 					</section>
 
 					<section data-background="/examples/assets/quality/agglutination3.jpg"
 							data-background-size="70%"
 							data-background-repeat="no-repeat"
-							data-background-color="#20272F"
 							data-background-transition="zoom">
-
 					</section>
 				</section>
 
@@ -59,17 +86,43 @@
 					<section data-background="/examples/assets/quality/trader1.jpg"
 							data-background-size="50%"
 							data-background-repeat="no-repeat"
-							data-background-color="#20272F"
 							data-background-transition="zoom">
-
 					</section>
 
 					<section data-background="/examples/assets/quality/trader2.jpg"
 							data-background-size="70%"
 							data-background-repeat="no-repeat"
 							data-background-transition="zoom">
-
 					</section>
+				</section>
+
+				<section data-background-transition="convex">
+					<section>
+						<ul>
+							<li>1) understandability</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>1) understandability</li>
+							<li>2) consistency</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>1) understandability</li>
+							<li>2) consistency</li>
+							<li>3) brevity (short names)</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="/examples/assets/quality/teaser2.jpg"
+						data-background-size="70%"
+						data-background-repeat="no-repeat"
+						data-background-transition="zoom">
 				</section>
 
 			</div>
@@ -77,6 +130,7 @@
 		</div>
 
 		<script src="dist/reveal.js"></script>
+
 		<script>
 
 			// Full list of configuration options:

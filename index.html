@@ -1,156 +1,175 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>code quality</title>
+	<title>code quality</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<script src="plugin/highlight/highlight.js"></script>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
-		<style>
-			.reveal .slide-background.present.-opacity {
-				opacity: 0.05;
-			}
+	<style>
+		.reveal .slide-background.present.-opacity {
+			opacity: 0.15;
+		}
 
-			h2 span {
-				display: inline-block;
-			}
-		</style>
-	</head>
+		h2 span {
+			display: inline;
+		}
 
-	<body>
+		.reveal blockquote {
+			width: 100%;
+			line-height: 1.4em;
+			font-size: 2.8rem;
+		}
 
-		<div class="reveal">
+		.reveal blockquote span {
+			font-size: 1.6rem;
+		}
+	</style>
+</head>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+<body>
 
-				<section class="-opacity"
-				data-background-transition="convex"
-				data-background="/examples/assets/quality/teaser1.jpg"
-				data-background-size="100%"
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<section class="-opacity" data-background-transition="convex"
+				data-background="/examples/assets/quality/teaser1.jpg" data-background-size="100%"
 				data-background-repeat="no-repeat">
 
-					<section data-auto-animate="true" data-auto-animate-easing="ease-out">
-						<h2>
-							<span data-id="skunk" style="opacity:1;height:auto;">🦨</span> code smells<span data-id="text" style="opacity:0;height:0;"> like mean spirit</span>
-						</h2>
-					</section>
+				<section></section>
 
-					<section data-auto-animate="true" data-auto-animate-easing="ease-out">
-						<h2>
-							<span data-id="skunk" style="opacity:0;height:0;">🦨</span> code smells<span data-id="text" style="opacity:1;height:auto;"> like mean spirit</span>
-						</h2>
-					</section>
-
+				<section data-auto-animate="true" data-auto-animate-easing="ease">
+					<h1>
+						<span data-id="skunk" style="opacity:1;">🦨 </span>
+						code smells
+						<span data-id="text" style="opacity:0;"> like mean spirit</span>
+					</h1>
 				</section>
 
-				<!--
-				<section data-background-transition="convex">
-					<div>
-						<img src="/examples/assets/quality/teaser2.jpg" alt="teaser2">
-					</div>
-				</section>
-				-->
-
-				<section data-background-transition="convex">
-					<section data-background-transition="zoom"
-							data-background="/examples/assets/quality/noise1.jpg"
-							data-background-size="50%"
-							data-background-repeat="no-repeat">
-					</section>
-
-					<section data-background-transition="zoom">
-						<img src="/examples/assets/quality/noise2.jpg" width="50%" alt="noise">
-					</section>
+				<section data-auto-animate="true" data-auto-animate-easing="ease">
+					<h1>
+						<span data-id="skunk" style="opacity:0;">🦨 </span>
+						code smells
+						<span data-id="text" style="opacity:1;"> like mean spirit</span>
+					</h1>
 				</section>
 
-				<section data-background-transition="convex">
-					<section data-background="/examples/assets/quality/agglutination1.jpg"
-							data-background-size="70%"
-							data-background-repeat="no-repeat"
-							data-background-transition="zoom">
-					</section>
+			</section>
 
-					<section data-background="/examples/assets/quality/agglutination2.jpg"
-							data-background-size="70%"
-							data-background-repeat="no-repeat"
-							data-background-transition="zoom">
-					</section>
+			<!--
+			<section data-background-transition="convex">
+				<div>
+					<img src="/examples/assets/quality/teaser2.jpg" alt="teaser2">
+				</div>
+			</section>
+		-->
 
-					<section data-background="/examples/assets/quality/agglutination3.jpg"
-							data-background-size="70%"
-							data-background-repeat="no-repeat"
-							data-background-transition="zoom">
-					</section>
+			<section data-background-transition="convex">
+				<section data-background-transition="zoom" data-background="/examples/assets/quality/noise1.jpg"
+					data-background-size="40%" data-background-repeat="no-repeat">
 				</section>
 
-				<section data-background-transition="convex">
-					<section data-background="/examples/assets/quality/trader1.jpg"
-							data-background-size="50%"
-							data-background-repeat="no-repeat"
-							data-background-transition="zoom">
-					</section>
+				<section data-background-transition="zoom">
+					<img class="r-stretch" src="/examples/assets/quality/noise2.jpg" width="50%" alt="noise">
+				</section>
+			</section>
 
-					<section data-background="/examples/assets/quality/trader2.jpg"
-							data-background-size="70%"
-							data-background-repeat="no-repeat"
-							data-background-transition="zoom">
-					</section>
+			<section data-background-transition="convex">
+				<section data-background="/examples/assets/quality/trader1.jpg" data-background-size="50%"
+					data-background-repeat="no-repeat" data-background-transition="zoom">
 				</section>
 
-				<section data-background-transition="convex">
-					<section>
-						<ul>
-							<li>1) understandability</li>
-						</ul>
-					</section>
+				<section data-background="/examples/assets/quality/trader2.jpg" data-background-size="70%"
+					data-background-repeat="no-repeat" data-background-transition="zoom">
+				</section>
+			</section>
 
-					<section>
-						<ul>
-							<li>1) understandability</li>
-							<li>2) consistency</li>
-						</ul>
-					</section>
-
-					<section>
-						<ul>
-							<li>1) understandability</li>
-							<li>2) consistency</li>
-							<li>3) brevity (short names)</li>
-						</ul>
-					</section>
+			<section data-background-transition="convex">
+				<section data-background-transition="zoom">
+					<blockquote
+						cite="https://en.wikipedia.org/wiki/Agglutination#:~:text=Agglutination%20is%20a%20linguistic%20process,widely%20are%20called%20agglutinative%20languages.">
+						"Agglutination is a linguistic process pertaining to derivational morphology in which complex
+						words are formed by
+						stringing together morphemes without changing them in spelling or phonetics. Languages that use
+						agglutination widely are
+						called agglutinative languages."
+						<span> - (Wikipedia)</span>
+					</blockquote>
 				</section>
 
-			</div>
+				<section data-background="/examples/assets/quality/agglutination2.jpg" data-background-size="70%"
+					data-background-repeat="no-repeat" data-background-transition="zoom">
+				</section>
+
+				<section data-background="/examples/assets/quality/agglutination3.jpg" data-background-size="70%"
+					data-background-repeat="no-repeat" data-background-transition="zoom">
+				</section>
+			</section>
+
+			<section data-background-transition="convex">
+				<pre><code data-line-numbers="1|2|4|5|7|8|10|11|13|14">noMoreMemoryException
+outOfMemory
+
+.hasInvalidBorderColor { ... }
+.badColor { ... }
+
+"onSubmitUserRegistrationForm"
+"onSignIn"
+
+specialConditionChecker = (param) => checkSpecialCondition(param)
+condition = (value) => isTrue(value)
+
+let isNotIncorrectValue = false;
+let isValid = false;
+</code></pre>
+			</section>
+
+			<section data-background-transition="convex">
+				<section>
+					<h2>conclusions</h2>
+					<ol>
+						<li class="fragment fade-up">Verständlichkeit</li>
+						<li class="fragment fade-up">Konsistenz</li>
+						<li class="fragment fade-up">Kürze</li>
+					</ol>
+				</section>
+			</section>
+
+			<section>
+				<h2>Fin</h2>
+			</section>
 
 		</div>
 
-		<script src="dist/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="dist/reveal.js"></script>
 
-			// Full list of configuration options:
-			// https://revealjs.revealjs.com/config/
-			Reveal.initialize({
-				center: true
-			});
+	<script>
+		Reveal.initialize({
+			center: true,
+			plugins: [RevealHighlight]
+		});
+	</script>
 
-		</script>
+</body>
 
-	</body>
 </html>
